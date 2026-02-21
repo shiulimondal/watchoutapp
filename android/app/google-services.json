@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202781882153",
+    "project_id": "watchout-395ad",
+    "storage_bucket": "watchout-395ad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202781882153:android:3c8e9006250a95dc242938",
+        "android_client_info": {
+          "package_name": "com.ottwatchout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHLUlukf5RE4HBF-mssCGR-Gu_3Kyb52I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

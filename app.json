@@ -1,0 +1,114 @@
+{
+  "expo": {
+    "name": "watchout",
+    "slug": "watchout",
+    "version": "1.0.21",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/background.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "requireFullScreen": true,
+      "bundleIdentifier": "com.ottwatchout",
+      "appleTeamId": "5BSU7JY8PM",
+      "usesAppleInAppPurchaseProcessing": true,
+      "usesIAP": true,
+      "orientations": [
+        "portrait",
+        "landscape-left",
+        "landscape-right"
+      ]
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#000000",
+        "versionCode": 3
+      },
+      "package": "com.ottwatchout",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "https",
+              "host": "https://watchoutonline.in",
+              "pathPrefix": "/"
+            },
+            {
+              "scheme": "myapp"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "permissions": [
+        "INTERNET"
+      ],
+      "jsEngine": "hermes"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "../../assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true,
+            "targetSdkVersion": 35
+          }
+        }
+      ],
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "DEFAULT"
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }
+      ],
+      "react-native-video",
+      [
+        "expo-iap",
+        {
+          "ios": {
+            "usesAppleInAppPurchaseProcessing": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "3fda2c51-bcb5-494c-8cab-7d20bb8fab05"
+      }
+    }
+  }
+}
